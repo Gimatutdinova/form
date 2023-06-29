@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+body {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f7fa;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  width: 60%;
+  height: 250px;
+  background-color: #faf4f1;
+  border: 2px #e1dbd8 solid;
+  border-radius: 10px;
+}
+@media screen and (max-width: 650px) {
+  .form {
+    width: 90%;
+  }
+}
+.form__element {
+  display: flex;
+  justify-content: space-around;
+}
+.form__element > textarea {
+  resize: none;
+  padding: 10px;
+  border: 2px #e1dbd8 solid;
+  border-radius: 10px;
+}
+.form__select {
+  display: flex;
+  flex-wrap: wrap;
+}
+.form__select > p {
+  margin-right: 10px;
+}
+.form__button {
+  margin: 0 auto;
+  width: 100px;
+  background: #f3e5de;
+  border: 2px #e1dbd8 solid;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+.form__button:hover {
+  transform: scale(1.2, 1.2);
+  transition: all 0.5s ease;
+}
+.form__value {
+  width: 60%;
+  word-wrap: break-word;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
